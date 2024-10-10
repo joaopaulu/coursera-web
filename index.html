@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lançamentos no Cinema</title>
+    <title>New Movie Releases</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,67 +17,75 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="roboto-regular">
-    <header class="bg-dark text-white text-center py-3 roboto-bold">
-      <h1>Lançamentos no Cinema</h1>
+    <header
+      class="bg-dark text-white text-center py-3 roboto-bold"
+      role="banner"
+    >
+      <h1>New Movie Releases</h1>
     </header>
 
-    <main class="container my-5">
-      <section class="movie-list">
-        <h2 class="mb-4 roboto-bold">Filmes em Cartaz</h2>
+    <main class="container my-5" role="main">
+      <section class="movie-list" aria-labelledby="movies-heading">
+        <h2 class="mb-4 roboto-bold" id="movies-heading">Movies in Theaters</h2>
         <div class="row">
-          <article class="col-md-4 text-center">
-            <img src="images/fall.png" alt="O Dublê" class="mb-2" />
-            <h3 class="roboto-regular">O Dublê</h3>
+          <article class="col-md-4 text-center" role="article">
+            <img
+              src="images/fall.png"
+              alt="The Stuntman Movie Poster"
+              class="mb-2"
+            />
+            <h3 class="roboto-regular">The Stuntman</h3>
             <p class="roboto-regular">
-              O Dublê é um filme de ação e comédia dirigido por David Leitch
-              (Trem-Bala, Deadpool 2) e baseado na série Duro na Queda, sucesso
-              dos anos 80. A história acompanha Colt Seavers (Ryan Gosling), um
-              dublê de Hollywood que precisou abandonar a vida de acrobacias
-              perigosas após sofrer um acidente que quase acabou com a vida e a
-              carreira dele
+              The Stuntman is an action-comedy film directed by David Leitch
+              (Bullet Train, Deadpool 2) based on the hit 1980s series "Hard at
+              Fall." The story follows Colt Seavers (Ryan Gosling), a Hollywood
+              stuntman who had to abandon his dangerous stunt career after
+              suffering an accident that nearly ended his life and career.
             </p>
           </article>
 
-          <article class="col-md-4 text-center">
+          <article class="col-md-4 text-center" role="article">
             <img
               src="images/deadpool.png"
-              alt="Deadpool & Wolverine "
+              alt="Deadpool & Wolverine Movie Poster"
               class="mb-2"
             />
             <h3 class="roboto-regular">Deadpool & Wolverine</h3>
             <p class="roboto-regular">
-              Deadpool e Wolverine (2024)" é o típico filme feito para agradar
-              fã, o que pode ser menos impactante pra quem tem pouco apreço por
-              aqueles personagens. E, infelizmente, foi o meu caso. Gostei da
-              trilha musical (que, propositalmente, tira sarro do que se espera
-              ouvir num filme de super herói), algumas cenas de ação e das
-              tiradas que o Deadpool fazia
+              "Deadpool and Wolverine (2024)" is the typical fan-service movie,
+              which might be less impactful for those who have little
+              appreciation for those characters. Unfortunately, I was one of
+              them. I enjoyed the soundtrack (which humorously mocks what one
+              expects to hear in a superhero film), some action scenes, and the
+              quips that Deadpool made.
             </p>
           </article>
 
-          <article class="col-md-4 text-center">
+          <article class="col-md-4 text-center" role="article">
             <img
               src="images/thundermans.png"
-              alt="Pôster do Filme 3"
+              alt="The Thundermans Return Movie Poster"
               class="mb-2"
             />
             <h3 class="roboto-regular">The Thundermans Return</h3>
             <p class="roboto-regular">
               The Thundermans are back! Nickelodeon UK & Ireland will premiere
-              The Thundermans Return, a brand new movie based on Nickelodeon‘s
-              hit live-action superhero comedy series, The Thundermans, on
-              Thursday 7th March 2024 at 6:00pm! The movie will also be
-              available to stream on Paramount+, the streaming home of
-              Nickelodeon.
+              "The Thundermans Return," a brand new movie based on Nickelodeon‘s
+              hit live-action superhero comedy series, on Thursday, March 7,
+              2024, at 6:00 PM! The movie will also be available to stream on
+              Paramount+, the streaming home of Nickelodeon.
             </p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3 roboto-regular">
+    <footer
+      class="bg-dark text-white text-center py-3 roboto-regular"
+      role="contentinfo"
+    >
       <p>
-        Veja mais informações em
+        For more information, visit
         <a href="https://www.imdb.com" class="text-white">IMDb</a>.
       </p>
     </footer>
