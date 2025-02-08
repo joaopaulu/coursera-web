@@ -27,6 +27,15 @@ footer {
   text-align: center;
 }
 
+footer a {
+  color: #f4a261; 
+  text-decoration: underline; 
+}
+
+footer a:hover {
+  color: #e9c46a; 
+}
+
 li {
   display: inline-block;
   width: 150px;
