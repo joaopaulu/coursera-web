@@ -1,3 +1,6 @@
+ul, ol {
+  list-style: none;
+}
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -10,8 +13,11 @@ header {
 }
 
 nav {
+  display: inline-block;
+  width: 80%;
   background-color: #d3d3d3;
   padding: 10px;
+  text-align: center;
 }
 
 main {
@@ -36,11 +42,11 @@ footer a:hover {
   color: #e9c46a; 
 }
 
-li {
+/* li {
   display: inline-block;
   width: 150px;
   text-align: center;
-}
+} */
 
 h1 {
   text-align: center;
@@ -50,4 +56,38 @@ h1 {
 
 p {
   line-height: 1.6;
+}
+
+.skip-link {  
+  color: #000;
+  padding: 8px; 
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid img:hover {
+  transform: scale(1.1);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
