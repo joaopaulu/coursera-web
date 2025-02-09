@@ -32,7 +32,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #357ABD;
+  background-color: #c0d7eb;;
   padding: 15px;
   border-radius: 8px;
 }
@@ -48,7 +48,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #460303;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 15px;
@@ -133,6 +133,10 @@ p {
 .skip-link {  
   color: #000;
   padding: 8px; 
+}
+
+img[alt=""] {
+  border: 2px solid red; 
 }
 
 .skip-link:focus {
