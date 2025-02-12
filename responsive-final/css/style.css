@@ -1,0 +1,99 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #ecf0f1;
+    }
+    h1 {
+        color: #ecf0f1;
+    }
+    figure {
+        background-color: #333;
+        border: 2px solid #555;
+    }
+    footer a {
+        color: #3498db;
+    }
+}
