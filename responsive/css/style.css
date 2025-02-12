@@ -20,11 +20,7 @@ a {
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    text-align: center;
 }
 
 .color-box {
@@ -32,21 +28,20 @@ a {
     border: 1px solid #ccc;
     text-align: center;
     padding: 10px;
+    display: inline-block; 
     width: 90%;
     max-width: 200px;
 }
 
 .color-box img {
     width: 100%;
-    max-height: 150px;
     object-fit: contain;
-    display: block;
-    margin: auto;
 }
 
 @media (min-width: 772px) {
     .color-box {
-        width: 45%;
+        width: 45vw;
+        display: inline-block;
     }
 
     .color-box img {
@@ -56,6 +51,6 @@ a {
 
 @media (min-width: 998px) {
     .color-box {
-        width: 30%;
+        width: 30vw;
     }
 }
