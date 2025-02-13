@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Users</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-center">
+    <header class="bg-gray-800 text-white p-4">
+      <h1 class="text-2xl font-bold">Random Users List</h1>
+    </header>
+    <main class="p-6">
+      <section id="user-list" class="flex flex-wrap justify-center gap-4">
+      </section>
+
+      <div class="mt-6 flex justify-center space-x-4">
+        <button
+          id="prevPage"
+          class="bg-gray-700 text-white px-4 py-2 rounded-lg disabled:opacity-50"
+        >
+          Previous
+        </button>
+        <span id="pageNumber" class="text-lg font-semibold"></span>
+        <button
+          id="nextPage"
+          class="bg-gray-700 text-white px-4 py-2 rounded-lg disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+    </main>
+    <footer class="mt-6 p-4 bg-gray-800 text-white">
+      <p>&copy; 2025 Random Users</p>
+    </footer>
+
+    <div
+      id="userModal"
+      class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden flex items-center justify-center"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center relative">
+        <button
+          id="closeModal"
+          class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded-full"
+        >
+          X
+        </button>
+        <img
+          id="modal-user-image"
+          class="mx-auto rounded-full border-4 border-gray-300"
+          src=""
+          alt="User Image"
+        />
+        <h2 id="modal-user-name" class="text-2xl font-bold mt-4"></h2>
+        <p id="modal-user-email" class="text-gray-600 mt-2"></p>
+        <p id="modal-user-phone" class="text-gray-600 mt-2"></p>
+        <p id="modal-user-location" class="text-gray-600 mt-2"></p>
+        <p id="modal-user-age" class="text-gray-600 mt-2"></p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
